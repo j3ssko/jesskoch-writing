@@ -76,11 +76,38 @@ body {
     position: relative;
     top: -70px;
     left: -40px;
+    z-index: -1;
 }
 
 a {
     color: $font;
+    transition:color .2s ease-in-out;
+    &:hover {
+        color: #8E816A;
+    }
 }
+
+a.left
+{
+    position: relative;
+}
+
+a.left:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: $font;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+a.left:hover:before {
+    visibility: visible;
+    width: 100%;
+  }
 
 h1 {
     font-size: 24px;
@@ -109,34 +136,43 @@ p {
 }
 
 .sticky-header {
-    align-items: center;
     background-color: white;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     height: 60px;
-    justify-content: space-between;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 2;
 }
 
+.header-container {
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 .logo {
-    font-family: $cormorant; 
+    font-family: $cormorant;
     font-size: 25px;
     font-weight: 500;
     letter-spacing: 0.07em;
-    padding-left: 20px;
     a {
         text-decoration: none;
     }
 }
 
 .nav {
-    padding-right: 20px;
+    width: 385px;
     a {
         text-decoration: none;
+        &:hover {
+            color: $font;
+        }
     }
     li {
         display: inline-block;
@@ -151,7 +187,10 @@ p {
 .main {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 0 20px;
 }
 
 .section {
@@ -182,6 +221,10 @@ p {
 
 .pub-list-header {
     margin: 50px 0 30px;
+}
+
+.set-width {
+    min-width: 240px;
 }
 
 .lastborder {
@@ -226,36 +269,29 @@ p {
 
 // ABOUT SECTION
 
-.about-section {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
 .bio-photo {
-    flex-basis: 100%;
-    flex: 1;
-    min-width: 40%;
+    width: 50%;
+    float: left;
+    position: relative;
+    left: -30px;
     img {
         width: 100%;
     }
 }
 
 .bio {
-    margin-top: 50px;
-    min-width: 30%;
-    flex-basis: 100%;
-    flex: 1;
+    padding: 20px 200px 0 0;
+    position: relative;
+    left: -60px;
     h1 {
-        margin-bottom: 20px;
+        margin: 30px 0 20px;
     }
     p {
         padding: 10px 0;
-        font-size: 16px;
-        line-height: 25px;
+        line-height: 20px;
     }
 }
+
 
 // CONTACT SECTION
 
@@ -289,5 +325,35 @@ p {
 }
 
 .back-to-top {
-    text-align: right;
+    float: right;
+    width: 120px;
 }
+
+// SLIDE
+
+.slide-left {
+	-webkit-animation: slide-left 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-left 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+ @-webkit-keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+    }
+  }
+  @keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+    }
+  }
+  
