@@ -5,11 +5,15 @@ const app = express();
 app.use(express.json());
 app.use(express.static("express"));
 // default URL for website
-app.use('https://jesskoch-writing.herokuapp.com/', function(req,res){
+app.use('/', function(req,res){
     res.sendFile(path.join(__dirname+'/express/index.html'));
     //__dirname : It will resolve to your project folder.
   });
 const server = http.createServer(app);
-const port = 3000;
+const port = process.env.PORT || 8000;;
 server.listen(port);
 console.debug('Server listening on port ' + port);
+
+server.listen(port, () => {
+  console.log("App is running on port " + port);
+});
