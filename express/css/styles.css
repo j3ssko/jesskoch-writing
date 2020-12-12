@@ -52,6 +52,7 @@ table {
 html, body {
   max-width: 100%;
   overflow-x: hidden;
+  overflow-y: visible;
 }
 
 html {
@@ -63,7 +64,6 @@ body {
   background-color: #EDEAE6;
   color: black;
   font-family: "Cormorant Garamond", serif;
-  min-height: 100vh;
 }
 
 .slide-left {
