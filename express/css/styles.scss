@@ -359,25 +359,6 @@ p {
 
 // RESPONSIVE STUFF
 
-@media only screen and (max-width: 490px) {
-    .sticky-header,
-    .header-container {
-        height: 120px;
-    }
-    .nav {
-        text-align: right;
-        padding-right: 40px;
-        li {
-            display: block;
-            width: 100%;
-            padding: 5px 0 0 0;
-        }
-    }
-    .sub-header {
-        margin-top: 120px;
-    }
-}
-
 @media only screen and (max-width: 900px) {
     .pub-list-title {
         width: 100%;
