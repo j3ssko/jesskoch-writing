@@ -308,26 +308,6 @@ p {
   line-height: 20px;
 }
 
-@media only screen and (max-width: 900px) {
-  .pub-list-title {
-    width: 100%;
-  }
-
-  .bio-photo {
-    float: none;
-    width: 70%;
-    margin: 0 auto;
-    max-width: 600px;
-    left: 0;
-  }
-
-  .bio {
-    position: static;
-    padding: 0;
-    width: 70%;
-    margin: 0 auto;
-  }
-}
 .contact-section {
   display: flex;
   flex-direction: row;
@@ -360,6 +340,47 @@ p {
 .back-to-top {
   float: right;
   width: 120px;
+}
+
+@media only screen and (max-width: 490px) {
+  .sticky-header,
+.header-container {
+    height: 120px;
+  }
+
+  .nav {
+    text-align: right;
+    padding-right: 40px;
+  }
+  .nav li {
+    display: block;
+    width: 100%;
+    padding: 5px 0 0 0;
+  }
+
+  .sub-header {
+    margin-top: 120px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .pub-list-title {
+    width: 100%;
+  }
+
+  .bio-photo {
+    float: none;
+    width: 70%;
+    margin: 0 auto;
+    max-width: 600px;
+    left: 0;
+  }
+
+  .bio {
+    position: static;
+    padding: 0;
+    width: 70%;
+    margin: 0 auto;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
