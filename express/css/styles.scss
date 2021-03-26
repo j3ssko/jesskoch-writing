@@ -50,7 +50,7 @@ $garamond: 'Cormorant Garamond', serif;
 $logo: 'Cinzel Decorative', cursive;
 
 // colors
-$background: #EDEAE6;
+$background: #E5DFD1;
 $font: black;
 
 html, body {
@@ -137,7 +137,11 @@ a.left:before {
 a.left:hover:before {
     visibility: visible;
     width: 100%;
-  }
+}
+
+hr {
+    border-top: 1px solid black;
+}
 
 h1 {
     font-size: 24px;
@@ -187,12 +191,12 @@ p {
 }
 
 .logo {
-    font-family: $logo;
-    font-weight: 400;
-    font-size: 20px;
-    letter-spacing: 0.08em;
     a {
         text-decoration: none;
+    }
+    img {
+        max-width: 130px;
+        padding-top: 3px;
     }
 }
 
@@ -299,7 +303,7 @@ p {
 // ABOUT SECTION
 
 .bio-photo {
-    width: 50%;
+    width: 45%;
     float: left;
     position: relative;
     left: -30px;
@@ -309,9 +313,9 @@ p {
 }
 
 .bio {
-    padding: 20px 200px 0 0;
+    padding: 20px 238px 0 0;
     position: relative;
-    left: -60px;
+    left: -93px;
     h1 {
         margin: 30px 0 20px;
     }

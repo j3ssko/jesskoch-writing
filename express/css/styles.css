@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Mulish:wght@300;500&family=Cinzel+Decorative:wght@400;700&family=Buda:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Mulish:wght@300;500&family=Cinzel+Decorative:wght@400;700&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -61,7 +61,7 @@ html {
 
 body {
   margin: 0 auto;
-  background-color: #EDEAE6;
+  background-color: #E5DFD1;
   color: black;
   font-family: "Cormorant Garamond", serif;
 }
@@ -131,6 +131,10 @@ a.left:hover:before {
   width: 100%;
 }
 
+hr {
+  border-top: 1px solid black;
+}
+
 h1 {
   font-size: 24px;
   font-weight: 600;
@@ -178,15 +182,12 @@ p {
   padding: 0 20px;
 }
 
-.logo {
-  font-family: 'Buda', cursive;
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 18px;
-  letter-spacing: 0.08em;
-}
 .logo a {
   text-decoration: none;
+}
+.logo img {
+  max-width: 130px;
+  padding-top: 3px;
 }
 
 .nav {
@@ -287,7 +288,7 @@ p {
 }
 
 .bio-photo {
-  width: 50%;
+  width: 45%;
   float: left;
   position: relative;
   left: -30px;
@@ -297,9 +298,9 @@ p {
 }
 
 .bio {
-  padding: 20px 200px 0 0;
+  padding: 20px 238px 0 0;
   position: relative;
-  left: -60px;
+  left: -93px;
 }
 .bio h1 {
   margin: 30px 0 20px;
@@ -343,26 +344,6 @@ p {
   width: 120px;
 }
 
-@media only screen and (max-width: 490px) {
-  .sticky-header,
-.header-container {
-    height: 120px;
-  }
-
-  .nav {
-    text-align: right;
-    padding-right: 40px;
-  }
-  .nav li {
-    display: block;
-    width: 100%;
-    padding: 5px 0 0 0;
-  }
-
-  .sub-header {
-    margin-top: 120px;
-  }
-}
 @media only screen and (max-width: 900px) {
   .pub-list-title {
     width: 100%;
