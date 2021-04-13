@@ -61,7 +61,7 @@ html {
 
 body {
   margin: 0 auto;
-  background-color: #E5DFD1;
+  background-color: #dde4f3;
   color: black;
   font-family: "Cormorant Garamond", serif;
 }
@@ -107,7 +107,7 @@ a {
   transition: color 0.2s ease-in-out;
 }
 a:hover {
-  color: #8E816A;
+  color: #6476a5;
 }
 
 a.left {
@@ -265,7 +265,7 @@ p {
   width: 50%;
   margin: 0 auto 300px;
   padding: 40px 0 0;
-  max-width: 550px;
+  max-width: 650px;
 }
 
 .single-column {
@@ -300,7 +300,7 @@ p {
 .bio {
   padding: 20px 238px 0 0;
   position: relative;
-  left: -93px;
+  left: -59px;
 }
 .bio h1 {
   margin: 30px 0 20px;
