@@ -61,7 +61,7 @@ html {
 
 body {
   margin: 0 auto;
-  background-color: #dde4f3;
+  background-color: rgb(238, 238, 238);
   color: black;
   font-family: "Cormorant Garamond", serif;
 }
