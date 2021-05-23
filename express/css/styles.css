@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Mulish:wght@300;500&family=Cinzel+Decorative:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,300;0,400;0,500;1,400&display=swap');
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -61,9 +63,9 @@ html {
 
 body {
   margin: 0 auto;
-  background-color: rgb(238, 238, 238);
+  background-color: #f7f4ed;
   color: black;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Cormorant Garamond", serif; 
 }
 
 .slide-left {
@@ -102,12 +104,13 @@ body {
   transform: rotate(-20deg);
 }
 
-a {
+a,
+a:active,
+a:visited {
   color: black;
-  transition: color 0.2s ease-in-out;
 }
 a:hover {
-  color: #6476a5;
+  color: #A18567;
 }
 
 a.left {
@@ -183,8 +186,17 @@ p {
 }
 
 .logo a {
+  font-family: 'Newsreader', serif;
   text-decoration: none;
+  font-weight: 400;
+  letter-spacing: 2.5px;
+  font-size: 20px;
 }
+
+.logo a:hover {
+  color: black;
+}
+
 .logo img {
   max-width: 130px;
   padding-top: 3px;
@@ -265,7 +277,7 @@ p {
   width: 50%;
   margin: 0 auto 300px;
   padding: 40px 0 0;
-  max-width: 650px;
+  max-width: 550px;
 }
 
 .single-column {
@@ -300,7 +312,7 @@ p {
 .bio {
   padding: 20px 238px 0 0;
   position: relative;
-  left: -59px;
+  left: -60px;
 }
 .bio h1 {
   margin: 30px 0 20px;
