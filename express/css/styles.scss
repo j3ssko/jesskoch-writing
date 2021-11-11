@@ -50,7 +50,7 @@ $garamond: 'Cormorant Garamond', serif;
 $logo: 'Cinzel Decorative', cursive;
 
 // colors
-$background: #E5E2DB;
+$background: #dbdcdc;
 $font: black;
 
 html, body {
@@ -113,7 +113,7 @@ a {
     color: $font;
     transition:color .2s ease-in-out;
     &:hover {
-        color: #6476a5;
+        color: #6B7C89;
     }
 }
 
@@ -193,6 +193,9 @@ p {
 .logo {
     a {
         text-decoration: none;
+        font-size: 23px;
+        font-style: italic;
+        letter-spacing: 1px;
     }
     img {
         max-width: 130px;
