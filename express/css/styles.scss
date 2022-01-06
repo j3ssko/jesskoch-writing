@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Mulish:wght@300;500&family=Cinzel+Decorative:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap&family=Mulish:wght@300;500');
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -47,7 +47,6 @@ table {
 // fonts
 $mulish: 'Mulish', sans-serif;
 $garamond: 'Cormorant Garamond', serif;
-$logo: 'Cinzel Decorative', cursive;
 
 // colors
 $background: #dbdcdc;
@@ -167,6 +166,10 @@ p {
 
 .italics {
     font-style: italic;
+}
+
+.bold {
+    font-weight: 700;
 }
 
 .sticky-header {
